@@ -815,6 +815,10 @@
     gap: 4px;
     width: 78px;
   }
+  .pitch-slot-btn-wrap {
+    position: relative;
+    width: 100%;
+  }
   .pitch-slot-btn {
     width: 100%;
     padding: 6px 4px;
@@ -831,11 +835,143 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: block;
   }
   .pitch-slot-btn.filled.lime { border-color: var(--lime); color: var(--lime); }
   .pitch-slot-btn.filled.orange { border-color: var(--orange); color: var(--orange); }
   .pitch-slot-btn.filled.black { border-color: var(--black); color: var(--black); }
   .pitch-slot-btn.empty { color: var(--ink-dim); font-weight: 400; font-size: 9px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .rating-badge {
+    position: absolute;
+    top: -9px;
+    right: -9px;
+    min-width: 22px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4px;
+    background: #2a2a2a;
+    border-radius: 4px;
+    font-size: 9.5px;
+    font-weight: 700;
+    line-height: 1;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    z-index: 2;
+    pointer-events: none;
+  }
+  .rating-badge.r-zero { background: #201f1c; color: #8a887f; }
+  .rating-badge.r-low { background: #3d2020; color: #d99494; }
+  .rating-badge.r-mid { background: #3d3418; color: #d9c17e; }
+  .rating-badge.r-good { background: #223a1e; color: #9fcf8f; }
+  .rating-badge.r-perfect { background: #262040; color: #b3a3e6; }
+
+  .ga-slot {
+    position: absolute;
+    bottom: -8px;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .ga-slot-left { left: -6px; }
+  .ga-slot-right { right: -6px; }
+  .ga-chip {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  }
+  .ga-emoji {
+    font-size: 14px;
+    line-height: 1;
+    display: block;
+  }
+  .ga-count {
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    min-width: 11px;
+    height: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+    font-size: 8px;
+    font-weight: 800;
+    line-height: 1;
+    border-radius: 50%;
+    padding: 0 2px;
+  }
+
+  .motm-crown {
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    background: linear-gradient(135deg, #d9ad3f, #b8862a);
+    color: #241a05;
+    font-size: 8.5px;
+    font-weight: 800;
+    letter-spacing: 0.03em;
+    padding: 2px 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    z-index: 3;
+    line-height: 1.3;
+  }
+  .pitch-slot-btn.is-motm {
+    background: linear-gradient(160deg, rgba(217,173,63,0.18), rgba(11,13,10,0.9));
+    border-color: #d9ad3f;
+    color: #f3d98a;
+    box-shadow: 0 0 0 1px #b8862a, 0 0 14px rgba(217,173,63,0.4);
+  }
+  .motm-banner {
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, rgba(217,173,63,0.12), rgba(184,134,42,0.05));
+    border: 1px solid #8a6b25;
+    border-radius: 4px;
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #d9ad3f;
+  }
+  .motm-banner .motm-name {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0;
+    color: #f3d98a;
+  }
+  .rating-modal-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  .rating-modal-input {
+    width: 120px;
+    text-align: center;
+    background: var(--surface-2);
+    border: 1.5px solid var(--lime);
+    border-radius: 4px;
+    color: var(--ink);
+    font-family: inherit;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px 0;
+  }
+  .lineup-hint {
+    text-align: center;
+    color: var(--ink-dim);
+    font-size: 10px;
+    letter-spacing: 0.03em;
+    margin-top: -4px;
+  }
   .pos-label {
     font-size: 8px;
     color: rgba(255,255,255,0.5);
@@ -1008,8 +1144,10 @@
   <div class="view" id="view-lineup">
     <div class="lineup-team-picker" id="lineupTeamPicker"></div>
     <div class="formation-picker" id="formationPicker"></div>
+    <div class="motm-banner" id="motmBanner" style="display:none;"></div>
     <div class="pitch-wrap" id="pitchWrap"></div>
     <div class="empty-note" id="lineupEmptyNote" style="display:none;">Add players to this team's squad first, in the Squads tab.</div>
+    <div class="lineup-hint">Tap a spot to assign a player · hold a filled spot for rating &amp; MVP</div>
   </div>
 
   <!-- LOG VIEW -->
@@ -1031,6 +1169,7 @@
 
 <script>
 const TEAMS = ['lime', 'orange', 'black'];
+
 const TEAM_LABEL = { lime: 'Lime', orange: 'Orange', black: 'Black' };
 const STORAGE_KEY = 'matches';
 
@@ -1102,39 +1241,83 @@ let activePickerSlot = null;
 
 async function loadSquads() {
   try {
-    const res = await window.storage.get(SQUADS_KEY, false);
-    squads = res ? JSON.parse(res.value) : { lime: [], orange: [], black: [] };
+    const raw = localStorage.getItem(SQUADS_KEY);
+    squads = raw ? JSON.parse(raw) : { lime: [], orange: [], black: [] };
   } catch (e) {
     squads = { lime: [], orange: [], black: [] };
   }
 }
 async function saveSquads() {
   try {
-    await window.storage.set(SQUADS_KEY, JSON.stringify(squads), false);
+    localStorage.setItem(SQUADS_KEY, JSON.stringify(squads));
   } catch (e) {
     showToast('Save failed — storage error');
   }
 }
 async function loadLineups() {
   try {
-    const res = await window.storage.get(LINEUPS_KEY, false);
-    lineups = res ? JSON.parse(res.value) : {};
+    const raw = localStorage.getItem(LINEUPS_KEY);
+    lineups = raw ? JSON.parse(raw) : {};
   } catch (e) {
     lineups = {};
   }
 }
 async function saveLineups() {
   try {
-    await window.storage.set(LINEUPS_KEY, JSON.stringify(lineups), false);
+    localStorage.setItem(LINEUPS_KEY, JSON.stringify(lineups));
   } catch (e) {
     showToast('Save failed — storage error');
   }
 }
 function ensureLineup(team) {
   if (!lineups[team]) {
-    lineups[team] = { formation: '1-2-2-2', slots: new Array(FORMATIONS['1-2-2-2'].length).fill('') };
+    lineups[team] = { formation: '1-2-2-2', slots: new Array(FORMATIONS['1-2-2-2'].length).fill(''), motm: null };
   }
+  if (lineups[team].motm === undefined) lineups[team].motm = null;
   return lineups[team];
+}
+function setMotm(team, name) {
+  const lu = ensureLineup(team);
+  lu.motm = (lu.motm === name) ? null : name; // tapping the current MOTM again clears it
+}
+
+// ---------- Player ratings (per team, keyed by player name) ----------
+const RATINGS_KEY = 'ratings';
+let ratings = {}; // { lime: { "John": 7.5 }, orange: {...}, black: {...} }
+
+async function loadRatings() {
+  try {
+    const raw = localStorage.getItem(RATINGS_KEY);
+    ratings = raw ? JSON.parse(raw) : {};
+  } catch (e) {
+    ratings = {};
+  }
+}
+async function saveRatings() {
+  try {
+    localStorage.setItem(RATINGS_KEY, JSON.stringify(ratings));
+  } catch (e) {
+    showToast('Save failed — storage error');
+  }
+}
+function getRating(team, name) {
+  return (ratings[team] && ratings[team][name] !== undefined) ? ratings[team][name] : null;
+}
+function setRating(team, name, value) {
+  if (!ratings[team]) ratings[team] = {};
+  if (value === null) {
+    delete ratings[team][name];
+  } else {
+    ratings[team][name] = value;
+  }
+}
+function ratingClass(val) {
+  if (val === null || val === undefined || isNaN(val)) return '';
+  if (val === 0) return 'r-zero';
+  if (val <= 3) return 'r-low';
+  if (val <= 6) return 'r-mid';
+  if (val <= 9) return 'r-good';
+  return 'r-perfect';
 }
 
 // ---------- Match timer ----------
@@ -1219,15 +1402,15 @@ function resetTimer() {
 // ---------- Storage ----------
 async function loadMatches() {
   try {
-    const res = await window.storage.get(STORAGE_KEY, false);
-    matches = res ? JSON.parse(res.value) : [];
+    const raw = localStorage.getItem(STORAGE_KEY);
+    matches = raw ? JSON.parse(raw) : [];
   } catch (e) {
     matches = [];
   }
 }
 async function saveMatches() {
   try {
-    await window.storage.set(STORAGE_KEY, JSON.stringify(matches), false);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(matches));
   } catch (e) {
     showToast('Save failed — storage error');
   }
@@ -1460,9 +1643,12 @@ function renderRosterList() {
       Object.keys(lineups).forEach(team => {
         if (team === selectedSquadTeam && lineups[team]) {
           lineups[team].slots = lineups[team].slots.map(s => s === removedName ? '' : s);
+          if (lineups[team].motm === removedName) lineups[team].motm = null;
         }
       });
       await saveLineups();
+      setRating(selectedSquadTeam, removedName, null);
+      await saveRatings();
       renderRosterList();
       showToast('Player removed');
     });
@@ -1524,6 +1710,7 @@ function renderFormationPicker() {
       lu2.slots = new Array(FORMATIONS[f].length).fill('');
       // Try to carry over previously assigned names into new slots, in order
       oldNames.forEach((name, i) => { if (i < lu2.slots.length) lu2.slots[i] = name; });
+      if (lu2.motm && !lu2.slots.includes(lu2.motm)) lu2.motm = null;
       await saveLineups();
       renderFormationPicker();
       renderPitch();
@@ -1534,6 +1721,7 @@ function renderFormationPicker() {
 function renderPitch() {
   const wrap = document.getElementById('pitchWrap');
   const emptyNote = document.getElementById('lineupEmptyNote');
+  const motmBanner = document.getElementById('motmBanner');
   const roster = squads[selectedLineupTeam] || [];
   const lu = ensureLineup(selectedLineupTeam);
   const positions = FORMATIONS[lu.formation];
@@ -1541,10 +1729,24 @@ function renderPitch() {
   if (roster.length === 0) {
     wrap.style.display = 'none';
     emptyNote.style.display = 'block';
+    motmBanner.style.display = 'none';
     return;
   }
   wrap.style.display = 'block';
   emptyNote.style.display = 'none';
+
+  if (lu.motm) {
+    motmBanner.style.display = 'flex';
+    motmBanner.innerHTML = `<span>★ MVP</span><span class="motm-name">${escapeHtml(lu.motm)}</span>`;
+  } else {
+    motmBanner.style.display = 'none';
+  }
+
+  // Goals/assists for this team, scoped to the day currently selected in the app
+  const dayMatches = matches.filter(m => (m.date || todayStr()) === selectedDate);
+  const dayPlayers = computePlayers(dayMatches);
+  const gaByName = {};
+  dayPlayers.forEach(p => { gaByName[p.name] = p; });
 
   const pitchLines = `
     <svg viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -1559,10 +1761,31 @@ function renderPitch() {
   const slotsHtml = positions.map((pos, i) => {
     const name = lu.slots[i] || '';
     const filled = !!name;
+    const ratingVal = filled ? getRating(selectedLineupTeam, name) : null;
+    const ratingBadge = (filled && ratingVal !== null)
+      ? `<span class="rating-badge ${ratingClass(ratingVal)}">${ratingVal.toFixed(1)}</span>`
+      : '';
+    const isMotm = filled && lu.motm === name;
+    const motmCrown = isMotm ? `<span class="motm-crown">★ MVP</span>` : '';
+
+    const ga = filled ? gaByName[name] : null;
+    const goalChip = (ga && ga.goals > 0)
+      ? `<span class="ga-chip ga-goal"><span class="ga-emoji">⚽</span><span class="ga-count">${ga.goals}</span></span>`
+      : '';
+    const assistChip = (ga && ga.assists > 0)
+      ? `<span class="ga-chip ga-assist"><span class="ga-emoji">👟</span><span class="ga-count">${ga.assists}</span></span>`
+      : '';
+
     return `
       <div class="pitch-slot" style="left:${pos.x}%; top:${pos.y}%;">
         <span class="pos-label">${pos.label}</span>
-        <button class="pitch-slot-btn ${filled ? 'filled ' + selectedLineupTeam : 'empty'}" data-slot="${i}">${filled ? escapeHtml(name) : '+ Add'}</button>
+        <div class="pitch-slot-btn-wrap">
+          ${motmCrown}
+          <button class="pitch-slot-btn ${filled ? 'filled ' + selectedLineupTeam : 'empty'} ${isMotm ? 'is-motm' : ''}" data-slot="${i}" data-name="${escapeHtml(name)}">${filled ? escapeHtml(name) : '+ Add'}</button>
+          ${ratingBadge}
+          ${assistChip ? `<div class="ga-slot ga-slot-left">${assistChip}</div>` : ''}
+          ${goalChip ? `<div class="ga-slot ga-slot-right">${goalChip}</div>` : ''}
+        </div>
       </div>
     `;
   }).join('');
@@ -1570,8 +1793,132 @@ function renderPitch() {
   wrap.innerHTML = pitchLines + slotsHtml;
 
   wrap.querySelectorAll('.pitch-slot-btn').forEach(btn => {
-    btn.addEventListener('click', () => openPlayerPicker(parseInt(btn.dataset.slot)));
+    attachSlotInteractions(btn);
   });
+}
+
+// Long-press (or click-and-hold) on a filled slot opens the rating modal;
+// a normal tap opens the player picker as before.
+function attachSlotInteractions(btn) {
+  const slotIndex = parseInt(btn.dataset.slot);
+  const name = btn.dataset.name;
+  let pressTimer = null;
+  let longPressed = false;
+
+  const startPress = (e) => {
+    longPressed = false;
+    if (!name) return; // empty slots have nothing to rate or crown
+    pressTimer = setTimeout(() => {
+      longPressed = true;
+      if (navigator.vibrate) navigator.vibrate(30);
+      openSlotActionSheet(name);
+    }, 480);
+  };
+  const cancelPress = () => {
+    clearTimeout(pressTimer);
+  };
+  const handleClick = () => {
+    if (longPressed) { longPressed = false; return; }
+    openPlayerPicker(slotIndex);
+  };
+
+  btn.addEventListener('touchstart', startPress, { passive: true });
+  btn.addEventListener('touchend', cancelPress);
+  btn.addEventListener('touchmove', cancelPress);
+  btn.addEventListener('mousedown', startPress);
+  btn.addEventListener('mouseup', cancelPress);
+  btn.addEventListener('mouseleave', cancelPress);
+  btn.addEventListener('click', handleClick);
+}
+
+function openSlotActionSheet(name) {
+  const team = selectedLineupTeam;
+  const lu = ensureLineup(team);
+  const isCurrentMotm = lu.motm === name;
+
+  const backdrop = document.createElement('div');
+  backdrop.className = 'picker-modal-backdrop';
+  backdrop.innerHTML = `
+    <div class="picker-modal">
+      <h3>${escapeHtml(name)} — ${TEAM_LABEL[team]}</h3>
+      <div class="picker-option" id="actionRate" style="text-align:center;">Rate this player</div>
+      <div class="picker-option ${isCurrentMotm ? 'clear-opt' : ''}" id="actionMotm" style="text-align:center;${isCurrentMotm ? '' : 'color:#f3d98a;'}">${isCurrentMotm ? 'Remove MVP' : '★ Set as MVP'}</div>
+      <button class="picker-close" id="actionCancel">Cancel</button>
+    </div>
+  `;
+  document.body.appendChild(backdrop);
+
+  document.getElementById('actionRate').addEventListener('click', () => {
+    backdrop.remove();
+    openRatingModal(name);
+  });
+  document.getElementById('actionMotm').addEventListener('click', async () => {
+    setMotm(team, name);
+    await saveLineups();
+    renderPitch();
+    backdrop.remove();
+    showToast(isCurrentMotm ? 'MVP cleared' : name + ' set as MVP');
+  });
+  document.getElementById('actionCancel').addEventListener('click', () => backdrop.remove());
+  backdrop.addEventListener('click', (e) => { if (e.target === backdrop) backdrop.remove(); });
+}
+
+function openRatingModal(name) {
+  const team = selectedLineupTeam;
+  const current = getRating(team, name);
+
+  const backdrop = document.createElement('div');
+  backdrop.className = 'picker-modal-backdrop';
+  backdrop.innerHTML = `
+    <div class="picker-modal">
+      <h3>Rate ${escapeHtml(name)} — ${TEAM_LABEL[team]}</h3>
+      <div class="rating-modal-row">
+        <input type="text" inputmode="decimal" id="ratingModalInput" class="rating-modal-input" placeholder="0.0 – 10.0" value="${current !== null ? current.toFixed(1) : ''}" maxlength="4">
+      </div>
+      <button class="picker-option" id="ratingModalSave" style="text-align:center;background:var(--lime);color:#0b0d0a;">Save rating</button>
+      ${current !== null ? `<div class="picker-option clear-opt" id="ratingModalClear" style="text-align:center;">Clear rating</div>` : ''}
+      <button class="picker-close" id="ratingModalCancel">Cancel</button>
+    </div>
+  `;
+  document.body.appendChild(backdrop);
+
+  const input = document.getElementById('ratingModalInput');
+  input.focus();
+  input.select();
+  input.addEventListener('input', () => {
+    input.value = input.value.replace(/[^0-9.]/g, '');
+    const parts = input.value.split('.');
+    if (parts.length > 2) input.value = parts[0] + '.' + parts.slice(1).join('');
+  });
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') saveIt();
+  });
+
+  async function saveIt() {
+    let val = parseFloat(input.value);
+    if (isNaN(val)) { backdrop.remove(); return; }
+    val = Math.max(0, Math.min(10, val));
+    val = Math.round(val * 10) / 10;
+    setRating(team, name, val);
+    await saveRatings();
+    renderPitch();
+    backdrop.remove();
+    showToast(name + ' rated ' + val.toFixed(1));
+  }
+
+  document.getElementById('ratingModalSave').addEventListener('click', saveIt);
+  const clearBtn = document.getElementById('ratingModalClear');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', async () => {
+      setRating(team, name, null);
+      await saveRatings();
+      renderPitch();
+      backdrop.remove();
+      showToast('Rating cleared');
+    });
+  }
+  document.getElementById('ratingModalCancel').addEventListener('click', () => backdrop.remove());
+  backdrop.addEventListener('click', (e) => { if (e.target === backdrop) backdrop.remove(); });
 }
 
 function openPlayerPicker(slotIndex) {
@@ -1604,10 +1951,14 @@ function openPlayerPicker(slotIndex) {
     if (e.target === backdrop) { backdrop.remove(); return; }
     const opt = e.target.closest('.picker-option');
     if (opt) {
+      const outgoingName = lu.slots[slotIndex];
       if (opt.dataset.clear) {
         lu.slots[slotIndex] = '';
       } else {
         lu.slots[slotIndex] = opt.dataset.name;
+      }
+      if (outgoingName && lu.motm === outgoingName && lu.slots[slotIndex] !== outgoingName) {
+        lu.motm = null;
       }
       await saveLineups();
       renderPitch();
@@ -1898,11 +2249,13 @@ document.getElementById('resetBtn').addEventListener('click', async () => {
   matches = [];
   squads = { lime: [], orange: [], black: [] };
   lineups = {};
+  ratings = {};
   selectedDate = todayStr();
   statsMode = 'day';
   await saveMatches();
   await saveSquads();
   await saveLineups();
+  await saveRatings();
   renderStandings();
   renderPlayers();
   renderLog();
@@ -1913,11 +2266,12 @@ document.getElementById('resetBtn').addEventListener('click', async () => {
 document.getElementById('exportBtn').addEventListener('click', () => {
   const payload = {
     app: 'pitch-ledger',
-    version: 1,
+    version: 2,
     exportedAt: new Date().toISOString(),
     matches,
     squads,
-    lineups
+    lineups,
+    ratings
   };
   const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
@@ -1950,9 +2304,11 @@ document.getElementById('importFileInput').addEventListener('change', (e) => {
       matches = data.matches || [];
       squads = data.squads || { lime: [], orange: [], black: [] };
       lineups = data.lineups || {};
+      ratings = data.ratings || {};
       await saveMatches();
       await saveSquads();
       await saveLineups();
+      await saveRatings();
       selectedDate = allSessionDates()[0] || todayStr();
       renderStandings();
       renderPlayers();
@@ -1977,6 +2333,7 @@ async function init() {
   await loadMatches();
   await loadSquads();
   await loadLineups();
+  await loadRatings();
   renderTeamPickers();
   renderStandings();
 }

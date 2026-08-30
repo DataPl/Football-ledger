@@ -1,53 +1,30 @@
 {
   "app": "pitch-ledger",
   "version": 3,
-  "exportedAt": "2026-08-30T18:43:01.797Z",
-  "matches": [
-    {
-      "teamA": "lime",
-      "teamB": "orange",
-      "scoreA": 1,
-      "scoreB": 0,
-      "goals": [
-        {
-          "team": "lime",
-          "scorer": "Женя",
-          "assist": "Лёва",
-          "minute": "1'"
-        }
-      ],
-      "date": "2026-08-30",
-      "ts": 1788115374535
-    }
-  ],
+  "exportedAt": "2026-08-30T18:49:27.802Z",
+  "matches": [],
   "squads": {
-    "lime": [
-      "Эдгар",
-      "Дата",
-      "Костя Амзаев",
-      "Лёва",
-      "Лёха",
-      "Женя"
-    ],
+    "lime": [],
     "orange": [],
     "black": []
   },
   "lineups": {
     "lime": {
-      "size": 6,
-      "formation": "1-2-2",
+      "size": 5,
+      "formation": "1-2-1",
       "slots": [
-        "Костя Амзаев",
-        "Дата",
-        "Эдгар",
-        "Лёва",
-        "Лёха",
-        "Женя"
+        "",
+        "",
+        "",
+        "",
+        ""
       ],
       "motm": null
     }
   },
-  "ratings": {},
+  "ratings": {
+    "lime": {}
+  },
   "masterRoster": [
     "Дата",
     "Эдгар",

@@ -1,30 +1,53 @@
 {
   "app": "pitch-ledger",
   "version": 3,
-  "exportedAt": "2026-08-30T18:49:27.802Z",
-  "matches": [],
+  "exportedAt": "2026-08-31T08:14:53.182Z",
+  "matches": [
+    {
+      "teamA": "lime",
+      "teamB": "orange",
+      "scoreA": 1,
+      "scoreB": 0,
+      "goals": [
+        {
+          "team": "lime",
+          "scorer": "Женя",
+          "assist": "Лёва",
+          "minute": "1'"
+        }
+      ],
+      "date": "2026-08-30",
+      "ts": 1788115374535
+    }
+  ],
   "squads": {
-    "lime": [],
+    "lime": [
+      "Эдгар",
+      "Дата",
+      "Костя Амзаев",
+      "Лёва",
+      "Лёха",
+      "Женя"
+    ],
     "orange": [],
     "black": []
   },
   "lineups": {
     "lime": {
-      "size": 5,
-      "formation": "1-2-1",
+      "size": 6,
+      "formation": "1-2-2",
       "slots": [
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Костя Амзаев",
+        "Дата",
+        "Эдгар",
+        "Лёва",
+        "Лёха",
+        "Женя"
       ],
       "motm": null
     }
   },
-  "ratings": {
-    "lime": {}
-  },
+  "ratings": {},
   "masterRoster": [
     "Дата",
     "Эдгар",
@@ -45,6 +68,57 @@
     "Свят",
     "Стас",
     "Лёва",
-    "Лёха"
-  ]
+    "Лёха",
+    "Антон Т.",
+    "Олег",
+    "Макс Резванов",
+    "Олег Костев"
+  ],
+  "rosterInfo": {
+    "Лёва": {
+      "telegram": "@ZaMuRaIeV"
+    },
+    "Сергей Куповых": {
+      "telegram": "@Serg1964_07"
+    },
+    "Антон Т.": {
+      "telegram": "@anton_tuchynski"
+    },
+    "Дата": {
+      "telegram": "@anqyer"
+    },
+    "Эдгар": {
+      "telegram": "@Edoshka21"
+    },
+    "Женя": {
+      "telegram": "@zh_k500"
+    },
+    "Паша": {
+      "telegram": "@arrisabalaga"
+    },
+    "Сергей": {
+      "telegram": "@Jorjoeh"
+    },
+    "Лёха": {
+      "telegram": "@ebuvrotan"
+    },
+    "Олег": {
+      "telegram": "@Oleg_Borisov_2009"
+    },
+    "Макс Фол": {
+      "telegram": "@MaxFol"
+    },
+    "Костя": {
+      "telegram": "@Kolmurzaev52"
+    },
+    "Макс Хорват": {
+      "telegram": "@Maksym_painn"
+    },
+    "Макс Резванов": {
+      "telegram": "@rezvanov"
+    },
+    "Олег Костев": {
+      "telegram": "@KostevO"
+    }
+  }
 }

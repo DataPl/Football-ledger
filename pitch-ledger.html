@@ -867,6 +867,16 @@
     opacity: 0.4;
     cursor: default;
   }
+  .search-result-row.on-other-team {
+    border-color: #6b5a24;
+  }
+  .add-icon.other-team-tag {
+    color: #d9c17e;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0.02em;
+  }
   .search-hint {
     color: var(--ink-dim);
     font-size: 11px;
@@ -1209,6 +1219,19 @@
     text-transform: uppercase;
     letter-spacing: 0.06em;
     cursor: pointer;
+  }
+  .action-sheet-tg {
+    text-align: center;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--line);
+    font-size: 11px;
+    color: var(--ink-dim);
+    cursor: pointer;
+  }
+  .action-sheet-tg span {
+    color: var(--ink);
+    font-weight: 700;
   }
 </style>
 </head>
@@ -2119,9 +2142,16 @@ function renderRosterSearchResults() {
 
   el.innerHTML = matchesQuery.map(name => {
     const already = currentRoster.includes(name);
-    return `<div class="search-result-row ${already ? 'already-added' : ''}" data-name="${escapeHtml(name)}">
+    const otherTeam = TEAMS.find(t => t !== selectedSquadTeam && (squads[t] || []).includes(name));
+    let statusLabel = '+';
+    if (already) {
+      statusLabel = '✓ On squad';
+    } else if (otherTeam) {
+      statusLabel = `Already in ${TEAM_LABEL[otherTeam]}`;
+    }
+    return `<div class="search-result-row ${already ? 'already-added' : ''} ${otherTeam ? 'on-other-team' : ''}" data-name="${escapeHtml(name)}">
       <span>${escapeHtml(name)}</span>
-      <span class="add-icon">${already ? '✓ On squad' : '+'}</span>
+      <span class="add-icon ${otherTeam ? 'other-team-tag' : ''}">${statusLabel}</span>
     </div>`;
   }).join('');
 
@@ -2494,6 +2524,7 @@ function openSlotActionSheet(name, team) {
   const targetTeam = team || selectedLineupTeam;
   const lu = ensureLineup(targetTeam);
   const isCurrentMotm = lu.motm === name;
+  const tg = rosterInfo[name] && rosterInfo[name].telegram;
 
   const backdrop = document.createElement('div');
   backdrop.className = 'picker-modal-backdrop';
@@ -2503,6 +2534,7 @@ function openSlotActionSheet(name, team) {
       <div class="picker-option" id="actionRate" style="text-align:center;">Rate this player</div>
       <div class="picker-option ${isCurrentMotm ? 'clear-opt' : ''}" id="actionMotm" style="text-align:center;${isCurrentMotm ? '' : 'color:#f3d98a;'}">${isCurrentMotm ? 'Remove MVP' : '★ Set as MVP'}</div>
       <button class="picker-close" id="actionCancel">Cancel</button>
+      ${tg ? `<div class="action-sheet-tg" id="tgCopyLine">Telegram: <span>${escapeHtml(tg)}</span></div>` : ''}
     </div>
   `;
   document.body.appendChild(backdrop);
@@ -2518,8 +2550,54 @@ function openSlotActionSheet(name, team) {
     backdrop.remove();
     showToast(isCurrentMotm ? 'MVP cleared' : name + ' set as MVP');
   });
+  const tgLine = document.getElementById('tgCopyLine');
+  if (tgLine) {
+    tgLine.addEventListener('click', () => copyTextToClipboard(tg));
+  }
   document.getElementById('actionCancel').addEventListener('click', () => backdrop.remove());
   backdrop.addEventListener('click', (e) => { if (e.target === backdrop) backdrop.remove(); });
+}
+
+// Copies text to the clipboard. Tries the modern Clipboard API first; if that's
+// unavailable or blocked (common in embedded WebViews / non-HTTPS contexts),
+// falls back to a hidden textarea + execCommand, which works more broadly.
+async function copyTextToClipboard(text) {
+  let copied = false;
+
+  if (navigator.clipboard && navigator.clipboard.writeText && window.isSecureContext) {
+    try {
+      await navigator.clipboard.writeText(text);
+      copied = true;
+    } catch (e) {
+      copied = false;
+    }
+  }
+
+  if (!copied) {
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.top = '0';
+      ta.style.left = '0';
+      ta.style.opacity = '0';
+      ta.setAttribute('readonly', '');
+      document.body.appendChild(ta);
+      ta.focus();
+      ta.select();
+      ta.setSelectionRange(0, text.length);
+      copied = document.execCommand('copy');
+      document.body.removeChild(ta);
+    } catch (e) {
+      copied = false;
+    }
+  }
+
+  if (copied) {
+    showToast('Copied!');
+  } else {
+    showToast('Could not copy — press and hold the text to copy manually');
+  }
 }
 
 function openRatingModal(name, team) {

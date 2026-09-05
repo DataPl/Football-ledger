@@ -1,0 +1,157 @@
+{
+  "app": "pitch-ledger",
+  "version": 3,
+  "exportedAt": "2026-09-05T23:10:26.011Z",
+  "matches": [],
+  "squads": {
+    "lime": [],
+    "orange": [],
+    "black": []
+  },
+  "lineups": {},
+  "ratings": {},
+  "masterRoster": [
+    "Дата",
+    "Эдгар",
+    "Макс Ясинский",
+    "Макс Фол",
+    "Костя Амзаев",
+    "Костя Колмурзаев",
+    "Сергей Куповых",
+    "Сергей Сидамонидзе ☢️",
+    "Валера",
+    "Макс Хорват",
+    "Сабир",
+    "Паша",
+    "Ислам",
+    "Женя",
+    "Ваня",
+    "Мурад",
+    "Святослав Маирс",
+    "Стас Пидгайный",
+    "Лёва",
+    "Лёха",
+    "Антон Т.",
+    "Олег Борисов",
+    "Макс Резванов",
+    "Олег Костев",
+    "Нодо",
+    "Бека",
+    "Никита",
+    "Давид Анисимов",
+    "Олег Русанов",
+    "Влад Валеватый",
+    "Станислав Бабич",
+    "Дима Колбасин",
+    "Андрей Черных",
+    "Денис Шподарис",
+    "Павел Иванченко",
+    "Вадим Буров",
+    "Сергей",
+    "Алекс"
+  ],
+  "rosterInfo": {
+    "Лёва": {
+      "telegram": "@ZaMuRaIeV"
+    },
+    "Сергей Куповых": {
+      "telegram": "@Serg1964_07"
+    },
+    "Антон Т.": {
+      "telegram": "@anton_tuchynski"
+    },
+    "Дата": {
+      "telegram": "@anqyer"
+    },
+    "Эдгар": {
+      "telegram": "@Edoshka21"
+    },
+    "Женя": {
+      "telegram": "@zh_k500"
+    },
+    "Паша": {
+      "telegram": "@arrisabalaga"
+    },
+    "Лёха": {
+      "telegram": "@ebuvrotan"
+    },
+    "Макс Фол": {
+      "telegram": "@MaxFol"
+    },
+    "Макс Хорват": {
+      "telegram": "@Maksym_painn"
+    },
+    "Макс Резванов": {
+      "telegram": "@rezvanov"
+    },
+    "Олег Костев": {
+      "telegram": "@KostevO"
+    },
+    "Валера": {
+      "telegram": "@theheartisdeceitfulaboveaIlthing"
+    },
+    "Нодо": {
+      "telegram": "@Nodo_k"
+    },
+    "Костя Колмурзаев": {
+      "telegram": "@Kolmurzaev52"
+    },
+    "Бека": {
+      "telegram": "@bekna3ar"
+    },
+    "Никита": {
+      "telegram": "Double G"
+    },
+    "Олег Русанов": {
+      "telegram": "@Astashkina2326"
+    },
+    "Олег Борисов": {
+      "telegram": "@Oleg_Borisov_2009"
+    },
+    "Влад Валеватый": {
+      "telegram": "@SaxDoctor"
+    },
+    "Станислав Бабич": {
+      "telegram": "@SaxDoctor"
+    },
+    "Дима Колбасин": {
+      "telegram": "@dimarbxt"
+    },
+    "Стас Пидгайный": {
+      "telegram": "Stas"
+    },
+    "Сабир": {
+      "telegram": "."
+    },
+    "Андрей Черных": {
+      "telegram": "@AndreyChernykh98"
+    },
+    "Денис Шподарис": {
+      "telegram": "@shpodaris"
+    },
+    "Святослав Маирс": {
+      "telegram": "@maaairs"
+    },
+    "Макс Ясинский": {
+      "telegram": "@MaksymAff"
+    },
+    "Давид Анисимов": {
+      "telegram": "@doremy303"
+    },
+    "Павел Иванченко": {
+      "telegram": "@Pablitodevito"
+    },
+    "Вадим Буров": {
+      "telegram": "@byrchikk"
+    },
+    "Сергей": {
+      "telegram": "@serjwerty"
+    },
+    "Алекс": {
+      "telegram": "Aleqs"
+    },
+    "Сергей Сидамонидзе ☢️": {
+      "telegram": "@Jorjoeh"
+    }
+  }
+}

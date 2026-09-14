@@ -1,0 +1,567 @@
+{
+  "app": "pitch-ledger",
+  "version": 3,
+  "exportedAt": "2026-09-02T06:03:39.033Z",
+  "matches": [
+    {
+      "teamA": "lime",
+      "teamB": "orange",
+      "scoreA": 1,
+      "scoreB": 2,
+      "goals": [
+        {
+          "team": "lime",
+          "scorer": "Валера",
+          "assist": "Макс Ясинский",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Влад Валеватый",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Макс Фол",
+          "assist": "",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-09-02",
+      "ts": 1788322674136
+    },
+    {
+      "teamA": "orange",
+      "teamB": "black",
+      "scoreA": 2,
+      "scoreB": 1,
+      "goals": [
+        {
+          "team": "black",
+          "scorer": "Нодо",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Костя Колмурзаев",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Макс Фол",
+          "assist": "",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-09-02",
+      "ts": 1788323167726
+    },
+    {
+      "teamA": "lime",
+      "teamB": "black",
+      "scoreA": 1,
+      "scoreB": 1,
+      "goals": [
+        {
+          "team": "lime",
+          "scorer": "Олег Борисов",
+          "assist": "Дима Колбасин",
+          "minute": "0'"
+        },
+        {
+          "team": "black",
+          "scorer": "Никита",
+          "assist": "",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-09-02",
+      "ts": 1788323640835
+    },
+    {
+      "teamA": "lime",
+      "teamB": "orange",
+      "scoreA": 1,
+      "scoreB": 2,
+      "goals": [
+        {
+          "team": "orange",
+          "scorer": "Костя Колмурзаев",
+          "assist": "Макс Фол",
+          "minute": "0'"
+        },
+        {
+          "team": "lime",
+          "scorer": "Дима Колбасин",
+          "assist": "Олег Русанов",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Макс Фол",
+          "assist": "Макс Хорват",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-09-02",
+      "ts": 1788324146498
+    },
+    {
+      "teamA": "black",
+      "teamB": "orange",
+      "scoreA": 0,
+      "scoreB": 2,
+      "goals": [
+        {
+          "team": "orange",
+          "scorer": "Давид Анисимов",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Влад Валеватый",
+          "assist": "Макс Фол",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-09-02",
+      "ts": 1788324628712
+    },
+    {
+      "teamA": "lime",
+      "teamB": "black",
+      "scoreA": 3,
+      "scoreB": 0,
+      "goals": [
+        {
+          "team": "lime",
+          "scorer": "Денис Шподарис",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "lime",
+          "scorer": "Олег Русанов",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "lime",
+          "scorer": "Валера",
+          "assist": "",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-09-02",
+      "ts": 1788325095744
+    },
+    {
+      "teamA": "orange",
+      "teamB": "lime",
+      "scoreA": 2,
+      "scoreB": 0,
+      "goals": [
+        {
+          "team": "orange",
+          "scorer": "Макс Фол",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Влад Валеватый",
+          "assist": "Костя Колмурзаев",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-09-02",
+      "ts": 1788325594040
+    },
+    {
+      "teamA": "orange",
+      "teamB": "black",
+      "scoreA": 2,
+      "scoreB": 1,
+      "goals": [
+        {
+          "team": "black",
+          "scorer": "Андрей Черных",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Стас Пидгайный",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Стас Пидгайный",
+          "assist": "",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-09-02",
+      "ts": 1788326057336
+    },
+    {
+      "teamA": "lime",
+      "teamB": "black",
+      "scoreA": 4,
+      "scoreB": 1,
+      "goals": [
+        {
+          "team": "lime",
+          "scorer": "Денис Шподарис",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "black",
+          "scorer": "Нодо",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "lime",
+          "scorer": "Макс Ясинский",
+          "assist": "Дата",
+          "minute": "0'"
+        },
+        {
+          "team": "lime",
+          "scorer": "Валера",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "lime",
+          "scorer": "Дата",
+          "assist": "Макс Ясинский",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-09-02",
+      "ts": 1788326574182
+    },
+    {
+      "teamA": "lime",
+      "teamB": "orange",
+      "scoreA": 1,
+      "scoreB": 0,
+      "goals": [
+        {
+          "team": "lime",
+          "scorer": "Макс Ясинский",
+          "assist": "Валера",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-09-02",
+      "ts": 1788327100683
+    },
+    {
+      "teamA": "orange",
+      "teamB": "black",
+      "scoreA": 2,
+      "scoreB": 0,
+      "goals": [
+        {
+          "team": "orange",
+          "scorer": "Макс Хорват",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Макс Фол",
+          "assist": "Давид Анисимов",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-09-02",
+      "ts": 1788327602161
+    },
+    {
+      "teamA": "lime",
+      "teamB": "black",
+      "scoreA": 1,
+      "scoreB": 0,
+      "goals": [
+        {
+          "team": "lime",
+          "scorer": "Денис Шподарис",
+          "assist": "Олег Борисов",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-09-02",
+      "ts": 1788328103948
+    },
+    {
+      "teamA": "orange",
+      "teamB": "lime",
+      "scoreA": 1,
+      "scoreB": 3,
+      "goals": [
+        {
+          "team": "orange",
+          "scorer": "Костя Колмурзаев",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "lime",
+          "scorer": "Олег Борисов",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "lime",
+          "scorer": "Дима Колбасин",
+          "assist": "Олег Русанов",
+          "minute": "0'"
+        },
+        {
+          "team": "lime",
+          "scorer": "Макс Ясинский",
+          "assist": "",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-09-02",
+      "ts": 1788328575808
+    },
+    {
+      "teamA": "orange",
+      "teamB": "black",
+      "scoreA": 0,
+      "scoreB": 1,
+      "goals": [
+        {
+          "team": "black",
+          "scorer": "Станислав Бабич",
+          "assist": "Нодо",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-09-02",
+      "ts": 1788328841831
+    }
+  ],
+  "squads": {
+    "lime": [
+      "Олег Борисов",
+      "Олег Русанов",
+      "Макс Ясинский",
+      "Дата",
+      "Денис Шподарис",
+      "Дима Колбасин",
+      "Валера"
+    ],
+    "orange": [
+      "Костя Амзаев",
+      "Костя Колмурзаев",
+      "Макс Фол",
+      "Макс Хорват",
+      "Влад Валеватый",
+      "Стас Пидгайный",
+      "Давид Анисимов"
+    ],
+    "black": [
+      "Нодо",
+      "Сергей Куповых",
+      "Паша",
+      "Никита",
+      "Давид Анисимов",
+      "Станислав Бабич",
+      "Андрей Черных"
+    ]
+  },
+  "lineups": {
+    "lime": {
+      "size": 7,
+      "formation": "1-3-2-1",
+      "slots": [
+        "Олег Борисов",
+        "Дима Колбасин",
+        "Олег Русанов",
+        "Денис Шподарис",
+        "Дата",
+        "Валера",
+        "Макс Ясинский"
+      ],
+      "motm": null
+    },
+    "orange": {
+      "size": 7,
+      "formation": "1-2-2-2",
+      "slots": [
+        "Костя Амзаев",
+        "Макс Хорват",
+        "Стас Пидгайный",
+        "Влад Валеватый",
+        "Давид Анисимов",
+        "Макс Фол",
+        "Костя Колмурзаев"
+      ],
+      "motm": null
+    },
+    "black": {
+      "size": 7,
+      "formation": "1-2-3-1",
+      "slots": [
+        "Паша",
+        "Станислав Бабич",
+        "Сергей Куповых",
+        "Андрей Черных",
+        "Давид Анисимов",
+        "Никита",
+        "Нодо"
+      ],
+      "motm": null
+    }
+  },
+  "ratings": {
+    "black": {},
+    "orange": {},
+    "lime": {}
+  },
+  "masterRoster": [
+    "Дата",
+    "Эдгар",
+    "Макс Ясинский",
+    "Макс Фол",
+    "Костя Амзаев",
+    "Костя Колмурзаев",
+    "Сергей Куповых",
+    "Сергей ☢️",
+    "Валера",
+    "Макс Хорват",
+    "Сабир",
+    "Паша",
+    "Ислам",
+    "Женя",
+    "Ваня",
+    "Мурад",
+    "Святослав Маирс",
+    "Стас Пидгайный",
+    "Лёва",
+    "Лёха",
+    "Антон Т.",
+    "Олег Борисов",
+    "Макс Резванов",
+    "Олег Костев",
+    "Нодо",
+    "Бека",
+    "Никита",
+    "Давид Анисимов",
+    "Олег Русанов",
+    "Влад Валеватый",
+    "Станислав Бабич",
+    "Дима Колбасин",
+    "Андрей Черных",
+    "Денис Шподарис",
+    "Павел Иванченко"
+  ],
+  "rosterInfo": {
+    "Лёва": {
+      "telegram": "@ZaMuRaIeV"
+    },
+    "Сергей Куповых": {
+      "telegram": "@Serg1964_07"
+    },
+    "Антон Т.": {
+      "telegram": "@anton_tuchynski"
+    },
+    "Дата": {
+      "telegram": "@anqyer"
+    },
+    "Эдгар": {
+      "telegram": "@Edoshka21"
+    },
+    "Женя": {
+      "telegram": "@zh_k500"
+    },
+    "Паша": {
+      "telegram": "@arrisabalaga"
+    },
+    "Лёха": {
+      "telegram": "@ebuvrotan"
+    },
+    "Макс Фол": {
+      "telegram": "@MaxFol"
+    },
+    "Макс Хорват": {
+      "telegram": "@Maksym_painn"
+    },
+    "Макс Резванов": {
+      "telegram": "@rezvanov"
+    },
+    "Олег Костев": {
+      "telegram": "@KostevO"
+    },
+    "Валера": {
+      "telegram": "@theheartisdeceitfulaboveaIlthing"
+    },
+    "Нодо": {
+      "telegram": "@Nodo_k"
+    },
+    "Костя Колмурзаев": {
+      "telegram": "@Kolmurzaev52"
+    },
+    "Бека": {
+      "telegram": "@bekna3ar"
+    },
+    "Никита": {
+      "telegram": "Double G"
+    },
+    "Олег Русанов": {
+      "telegram": "@Astashkina2326"
+    },
+    "Олег Борисов": {
+      "telegram": "@Oleg_Borisov_2009"
+    },
+    "Влад Валеватый": {
+      "telegram": "@SaxDoctor"
+    },
+    "Станислав Бабич": {
+      "telegram": "@SaxDoctor"
+    },
+    "Дима Колбасин": {
+      "telegram": "@dimarbxt"
+    },
+    "Стас Пидгайный": {
+      "telegram": "Stas"
+    },
+    "Сабир": {
+      "telegram": "."
+    },
+    "Андрей Черных": {
+      "telegram": "@AndreyChernykh98"
+    },
+    "Денис Шподарис": {
+      "telegram": "@shpodaris"
+    },
+    "Святослав Маирс": {
+      "telegram": "@maaairs"
+    },
+    "Сергей ☢️": {
+      "telegram": "@Jorjoeh"
+    },
+    "Макс Ясинский": {
+      "telegram": "@MaksymAff"
+    },
+    "Давид Анисимов": {
+      "telegram": "@doremy303"
+    },
+    "Павел Иванченко": {
+      "telegram": "@Pablitodevito"
+    }
+  }
+}

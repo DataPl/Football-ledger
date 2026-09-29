@@ -1,0 +1,357 @@
+{
+  "app": "pitch-ledger",
+  "version": 4,
+  "exportedAt": "2026-09-29T22:01:48.110Z",
+  "matches": [],
+  "squads": {
+    "lime": [],
+    "orange": [],
+    "black": []
+  },
+  "lineups": {
+    "orange": {
+      "size": 7,
+      "formation": "1-2-3-1",
+      "slots": [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "motm": null
+    }
+  },
+  "ratings": {},
+  "masterRoster": [
+    "Дата",
+    "Эдгар",
+    "Макс Ясинский",
+    "Макс Фол",
+    "Костя Амзаев",
+    "Костя Колмурзаев",
+    "Сергей Куповых",
+    "Сергей Сидамонидзе ☢️",
+    "Валера гио",
+    "Макс Коваленко",
+    "Сабир Агаев",
+    "Паша Жуковский / Пабло",
+    "Ислам",
+    "Женя",
+    "Ваня",
+    "Мурад",
+    "Святослав Маирс",
+    "Стас Пидгайный",
+    "Лев Замураев",
+    "Лёха",
+    "Антон Т.",
+    "Олег Борисов",
+    "Макс Резванов",
+    "Олег Костев",
+    "Нодо",
+    "Бека",
+    "Никита Чигладзе",
+    "Давид Анисимов",
+    "Олег Русанов",
+    "Влад Валеватый",
+    "Станислав Бабич",
+    "Дима Колбасин",
+    "Андрей Черных",
+    "Денис Шподарис",
+    "Павел Иванченко",
+    "Вадим Буров",
+    "Сергей",
+    "Алекс",
+    "Тимофей Клинцов",
+    "Ника Сордиа",
+    "Валентин Позамантиров",
+    "Владимир",
+    "Василий Саратов",
+    "Никита Маслов"
+  ],
+  "rosterInfo": {
+    "Сергей Куповых": {
+      "telegram": "@Serg1964_07"
+    },
+    "Антон Т.": {
+      "telegram": "@anton_tuchynski"
+    },
+    "Дата": {
+      "telegram": "@anqyer"
+    },
+    "Эдгар": {
+      "telegram": "@Edoshka21"
+    },
+    "Женя": {
+      "telegram": "@zh_k500"
+    },
+    "Лёха": {
+      "telegram": "@ebuvrotan"
+    },
+    "Макс Фол": {
+      "telegram": "@MaxFol"
+    },
+    "Макс Резванов": {
+      "telegram": "@rezvanov"
+    },
+    "Олег Костев": {
+      "telegram": "@KostevO"
+    },
+    "Нодо": {
+      "telegram": "@Nodo_k"
+    },
+    "Костя Колмурзаев": {
+      "telegram": "@Kolmurzaev52"
+    },
+    "Бека": {
+      "telegram": "@bekna3ar"
+    },
+    "Олег Русанов": {
+      "telegram": "@Astashkina2326"
+    },
+    "Олег Борисов": {
+      "telegram": "@Oleg_Borisov_2009"
+    },
+    "Влад Валеватый": {
+      "telegram": "@SaxDoctor"
+    },
+    "Станислав Бабич": {
+      "telegram": "@SaxDoctor"
+    },
+    "Дима Колбасин": {
+      "telegram": "@dimarbxt"
+    },
+    "Стас Пидгайный": {
+      "telegram": "Stas"
+    },
+    "Андрей Черных": {
+      "telegram": "@AndreyChernykh98"
+    },
+    "Денис Шподарис": {
+      "telegram": "@shpodaris"
+    },
+    "Святослав Маирс": {
+      "telegram": "@maaairs"
+    },
+    "Макс Ясинский": {
+      "telegram": "@MaksymAff"
+    },
+    "Давид Анисимов": {
+      "telegram": "@doremy303"
+    },
+    "Павел Иванченко": {
+      "telegram": "@Pablitodevito"
+    },
+    "Вадим Буров": {
+      "telegram": "@byrchikk"
+    },
+    "Сергей": {
+      "telegram": "@serjwerty"
+    },
+    "Алекс": {
+      "telegram": "Aleqs"
+    },
+    "Сергей Сидамонидзе ☢️": {
+      "telegram": "@Jorjoeh"
+    },
+    "Сабир Агаев": {
+      "telegram": "."
+    },
+    "Лев Замураев": {
+      "telegram": "@ZaMuRaIeV"
+    },
+    "Тимофей Клинцов": {
+      "telegram": "@klintsovchik"
+    },
+    "Макс Коваленко": {
+      "telegram": "@Maksym_painn"
+    },
+    "Ника Сордиа": {
+      "telegram": "@nikasordia"
+    },
+    "Никита Чигладзе": {
+      "telegram": "Double G"
+    },
+    "Валера гио": {
+      "telegram": "@theheartisdeceitfulaboveaIlthing"
+    },
+    "Валентин Позамантиров": {
+      "telegram": "@ValentinoArgentino"
+    },
+    "Паша Жуковский / Пабло": {
+      "telegram": "@arrisabalaga"
+    },
+    "Владимир": {
+      "telegram": "@Old_Sage777"
+    },
+    "Никита Маслов": {
+      "telegram": "@astron0m"
+    }
+  },
+  "careerStats": {
+    "Макс Фол": {
+      "goals": 3,
+      "assists": 4,
+      "mvps": 1,
+      "sessions": 1,
+      "ratingSum": 9.2,
+      "ratingCount": 1,
+      "team": "orange"
+    },
+    "Олег Костев": {
+      "goals": 1,
+      "assists": 4,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 8.2,
+      "ratingCount": 1,
+      "team": "orange"
+    },
+    "Давид Анисимов": {
+      "goals": 2,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 8.1,
+      "ratingCount": 1,
+      "team": "orange"
+    },
+    "Никита Чигладзе": {
+      "goals": 1,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 5.4,
+      "ratingCount": 1,
+      "team": "black"
+    },
+    "Паша Жуковский / Пабло": {
+      "goals": 2,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 7.4,
+      "ratingCount": 1,
+      "team": "lime"
+    },
+    "Ника Сордиа": {
+      "goals": 2,
+      "assists": 0,
+      "mvps": 1,
+      "sessions": 1,
+      "ratingSum": 8.8,
+      "ratingCount": 1,
+      "team": "black"
+    },
+    "Денис Шподарис": {
+      "goals": 0,
+      "assists": 1,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 4.2,
+      "ratingCount": 1,
+      "team": "black"
+    },
+    "Олег Русанов": {
+      "goals": 1,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 6.8,
+      "ratingCount": 1,
+      "team": "lime"
+    },
+    "Дата": {
+      "goals": 4,
+      "assists": 1,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 9,
+      "ratingCount": 1,
+      "team": "orange"
+    },
+    "Тимофей Клинцов": {
+      "goals": 3,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 7.2,
+      "ratingCount": 1,
+      "team": "lime"
+    },
+    "Макс Ясинский": {
+      "goals": 1,
+      "assists": 2,
+      "mvps": 1,
+      "sessions": 1,
+      "ratingSum": 8.9,
+      "ratingCount": 1,
+      "team": "lime"
+    },
+    "Валентин Позамантиров": {
+      "goals": 1,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 5.2,
+      "ratingCount": 1,
+      "team": "black"
+    },
+    "Эдгар": {
+      "goals": 1,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 7.1,
+      "ratingCount": 1,
+      "team": "lime"
+    },
+    "Олег Борисов": {
+      "goals": 0,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 4,
+      "ratingCount": 1,
+      "team": "lime"
+    },
+    "Валера гио": {
+      "goals": 0,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 8.7,
+      "ratingCount": 1,
+      "team": "orange"
+    },
+    "Сабир Агаев": {
+      "goals": 0,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 4.3,
+      "ratingCount": 1,
+      "team": "orange"
+    },
+    "Костя Амзаев": {
+      "goals": 0,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 8.8,
+      "ratingCount": 1,
+      "team": "black"
+    },
+    "Макс Коваленко": {
+      "goals": 0,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 6.7,
+      "ratingCount": 1,
+      "team": "black"
+    }
+  }
+}

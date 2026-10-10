@@ -1,0 +1,865 @@
+{
+  "app": "pitch-ledger",
+  "version": 4,
+  "exportedAt": "2026-10-10T06:25:26.301Z",
+  "matches": [
+    {
+      "teamA": "lime",
+      "teamB": "black",
+      "scoreA": 1,
+      "scoreB": 2,
+      "goals": [
+        {
+          "team": "lime",
+          "scorer": "Владимир",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "black",
+          "scorer": "Влад Валеватый",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "black",
+          "scorer": "Денис Шподарис",
+          "assist": "",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-10-10",
+      "ts": 1791606523879
+    },
+    {
+      "teamA": "black",
+      "teamB": "orange",
+      "scoreA": 1,
+      "scoreB": 1,
+      "goals": [
+        {
+          "team": "black",
+          "scorer": "Влад Валеватый",
+          "assist": "Денис Шподарис",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Макс Фол",
+          "assist": "Паша Жуковский / Пабло",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-10-10",
+      "ts": 1791606911719
+    },
+    {
+      "teamA": "lime",
+      "teamB": "black",
+      "scoreA": 2,
+      "scoreB": 1,
+      "goals": [
+        {
+          "team": "black",
+          "scorer": "Влад Валеватый",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "lime",
+          "scorer": "Владимир",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "lime",
+          "scorer": "Владимир",
+          "assist": "",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-10-10",
+      "ts": 1791608044139
+    },
+    {
+      "teamA": "lime",
+      "teamB": "orange",
+      "scoreA": 2,
+      "scoreB": 3,
+      "goals": [
+        {
+          "team": "lime",
+          "scorer": "Владимир",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Никита Чигладзе",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "lime",
+          "scorer": "Дмитрий Изотов",
+          "assist": "",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-10-10",
+      "ts": 1791608161093
+    },
+    {
+      "teamA": "orange",
+      "teamB": "black",
+      "scoreA": 1,
+      "scoreB": 2,
+      "goals": [
+        {
+          "team": "black",
+          "scorer": "Сергей",
+          "assist": "Влад Валеватый",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Женя Поляков",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "black",
+          "scorer": "Влад Валеватый",
+          "assist": "",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-10-10",
+      "ts": 1791608356572
+    },
+    {
+      "teamA": "lime",
+      "teamB": "orange",
+      "scoreA": 2,
+      "scoreB": 3,
+      "goals": [
+        {
+          "team": "lime",
+          "scorer": "Дмитрий Изотов",
+          "assist": "Владимир",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Женя Поляков",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "lime",
+          "scorer": "Святослав Маирс",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Женя Поляков",
+          "assist": "Макс Фол",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Макс Фол",
+          "assist": "",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-10-10",
+      "ts": 1791609516634
+    },
+    {
+      "teamA": "lime",
+      "teamB": "black",
+      "scoreA": 0,
+      "scoreB": 2,
+      "goals": [
+        {
+          "team": "black",
+          "scorer": "Владимир К.",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "black",
+          "scorer": "Сергей",
+          "assist": "Стас Пидгайный",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-10-10",
+      "ts": 1791609553863
+    },
+    {
+      "teamA": "orange",
+      "teamB": "black",
+      "scoreA": 1,
+      "scoreB": 0,
+      "goals": [
+        {
+          "team": "orange",
+          "scorer": "Женя Поляков",
+          "assist": "Эдгар",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-10-10",
+      "ts": 1791609903726
+    },
+    {
+      "teamA": "lime",
+      "teamB": "orange",
+      "scoreA": 0,
+      "scoreB": 2,
+      "goals": [
+        {
+          "team": "orange",
+          "scorer": "Женя Поляков",
+          "assist": "Макс Фол",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Макс Фол",
+          "assist": "Женя Поляков",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-10-10",
+      "ts": 1791610927648
+    },
+    {
+      "teamA": "lime",
+      "teamB": "black",
+      "scoreA": 3,
+      "scoreB": 1,
+      "goals": [
+        {
+          "team": "lime",
+          "scorer": "Дмитрий Изотов",
+          "assist": "Святослав Маирс",
+          "minute": "0'"
+        },
+        {
+          "team": "lime",
+          "scorer": "Дмитрий Изотов",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "black",
+          "scorer": "Сергей",
+          "assist": "",
+          "minute": "0'"
+        },
+        {
+          "team": "lime",
+          "scorer": "Святослав Маирс",
+          "assist": "",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-10-10",
+      "ts": 1791610976456
+    },
+    {
+      "teamA": "orange",
+      "teamB": "black",
+      "scoreA": 2,
+      "scoreB": 1,
+      "goals": [
+        {
+          "team": "orange",
+          "scorer": "Макс Фол",
+          "assist": "Паша Жуковский / Пабло",
+          "minute": "0'"
+        },
+        {
+          "team": "black",
+          "scorer": "Влад Валеватый",
+          "assist": "Владимир К.",
+          "minute": "0'"
+        },
+        {
+          "team": "orange",
+          "scorer": "Женя Поляков",
+          "assist": "Эдгар",
+          "minute": "0'"
+        }
+      ],
+      "date": "2026-10-10",
+      "ts": 1791611257841
+    }
+  ],
+  "squads": {
+    "lime": [
+      "Андрей Черных",
+      "Давид Анисимов",
+      "Дмитрий Изотов",
+      "Святослав Маирс",
+      "Дата",
+      "Владимир"
+    ],
+    "orange": [
+      "Женя Поляков",
+      "Никита Чигладзе",
+      "Паша Жуковский / Пабло",
+      "Павел Иванченко",
+      "Макс Фол",
+      "Эдгар"
+    ],
+    "black": [
+      "Влад Валеватый",
+      "Денис Шподарис",
+      "Сергей",
+      "Стас Пидгайный",
+      "Лёха",
+      "Владимир К."
+    ]
+  },
+  "lineups": {
+    "lime": {
+      "size": 6,
+      "formation": "1-2-2",
+      "slots": [
+        "Дата",
+        "Давид Анисимов",
+        "Дмитрий Изотов",
+        "Андрей Черных",
+        "Святослав Маирс",
+        "Владимир"
+      ],
+      "motm": "Владимир"
+    },
+    "orange": {
+      "size": 6,
+      "formation": "1-1-3",
+      "slots": [
+        "Павел Иванченко",
+        "Эдгар",
+        "Никита Чигладзе",
+        "Паша Жуковский / Пабло",
+        "Макс Фол",
+        "Женя Поляков"
+      ],
+      "motm": "Женя Поляков"
+    },
+    "black": {
+      "size": 6,
+      "formation": "1-1-3",
+      "slots": [
+        "Лёха",
+        "Денис Шподарис",
+        "Стас Пидгайный",
+        "Влад Валеватый",
+        "Сергей",
+        "Владимир К."
+      ],
+      "motm": "Стас Пидгайный"
+    }
+  },
+  "ratings": {
+    "orange": {
+      "Женя Поляков": 9.6,
+      "Макс Фол": 9.1,
+      "Паша Жуковский / Пабло": 6.9,
+      "Эдгар": 8.2,
+      "Никита Чигладзе": 8,
+      "Павел Иванченко": 3.2
+    },
+    "lime": {
+      "Владимир": 9,
+      "Святослав Маирс": 7,
+      "Дмитрий Изотов": 7.7,
+      "Дата": 7.1,
+      "Давид Анисимов": 6.6,
+      "Андрей Черных": 6
+    },
+    "black": {
+      "Стас Пидгайный": 8.5,
+      "Владимир К.": 7.9,
+      "Влад Валеватый": 9,
+      "Сергей": 8.2,
+      "Лёха": 5.6,
+      "Денис Шподарис": 6
+    }
+  },
+  "masterRoster": [
+    "Дата",
+    "Эдгар",
+    "Макс Ясинский",
+    "Макс Фол",
+    "Костя Амзаев",
+    "Костя Колмурзаев",
+    "Сергей Куповых",
+    "Сергей Сидамонидзе ☢️",
+    "Валера гио",
+    "Макс Коваленко",
+    "Сабир Агаев",
+    "Паша Жуковский / Пабло",
+    "Ислам",
+    "Женя Поляков",
+    "Ваня",
+    "Мурад",
+    "Святослав Маирс",
+    "Стас Пидгайный",
+    "Лев Замураев",
+    "Лёха",
+    "Антон Тучинский",
+    "Олег Борисов",
+    "Макс Резванов",
+    "Олег Костев",
+    "Нодо",
+    "Бека",
+    "Никита Чигладзе",
+    "Давид Анисимов",
+    "Олег Русанов",
+    "Влад Валеватый",
+    "Станислав Бабич",
+    "Дима Колбасин",
+    "Андрей Черных",
+    "Денис Шподарис",
+    "Павел Иванченко",
+    "Вадим Буров",
+    "Сергей",
+    "Алекс",
+    "Тимофей Клинцов",
+    "Ника Сордиа",
+    "Валентин Позамантиров",
+    "Владимир",
+    "Василий Саратов",
+    "Никита Маслов",
+    "Дмитрий Изотов",
+    "Владимир К."
+  ],
+  "rosterInfo": {
+    "Сергей Куповых": {
+      "telegram": "@Serg1964_07"
+    },
+    "Дата": {
+      "telegram": "@anqyer"
+    },
+    "Эдгар": {
+      "telegram": "@Edoshka21"
+    },
+    "Лёха": {
+      "telegram": "@ebuvrotan"
+    },
+    "Макс Фол": {
+      "telegram": "@MaxFol"
+    },
+    "Макс Резванов": {
+      "telegram": "@rezvanov"
+    },
+    "Олег Костев": {
+      "telegram": "@KostevO"
+    },
+    "Нодо": {
+      "telegram": "@Nodo_k"
+    },
+    "Костя Колмурзаев": {
+      "telegram": "@Kolmurzaev52"
+    },
+    "Бека": {
+      "telegram": "@bekna3ar"
+    },
+    "Олег Русанов": {
+      "telegram": "@Astashkina2326"
+    },
+    "Олег Борисов": {
+      "telegram": "@Oleg_Borisov_2009"
+    },
+    "Влад Валеватый": {
+      "telegram": "@SaxDoctor"
+    },
+    "Станислав Бабич": {
+      "telegram": "@SaxDoctor"
+    },
+    "Дима Колбасин": {
+      "telegram": "@dimarbxt"
+    },
+    "Стас Пидгайный": {
+      "telegram": "Stas"
+    },
+    "Андрей Черных": {
+      "telegram": "@AndreyChernykh98"
+    },
+    "Денис Шподарис": {
+      "telegram": "@shpodaris"
+    },
+    "Святослав Маирс": {
+      "telegram": "@maaairs"
+    },
+    "Макс Ясинский": {
+      "telegram": "@MaksymAff"
+    },
+    "Давид Анисимов": {
+      "telegram": "@doremy303"
+    },
+    "Павел Иванченко": {
+      "telegram": "@Pablitodevito"
+    },
+    "Вадим Буров": {
+      "telegram": "@byrchikk"
+    },
+    "Сергей": {
+      "telegram": "@serjwerty"
+    },
+    "Алекс": {
+      "telegram": "Aleqs"
+    },
+    "Сергей Сидамонидзе ☢️": {
+      "telegram": "@Jorjoeh"
+    },
+    "Сабир Агаев": {
+      "telegram": "."
+    },
+    "Лев Замураев": {
+      "telegram": "@ZaMuRaIeV"
+    },
+    "Тимофей Клинцов": {
+      "telegram": "@klintsovchik"
+    },
+    "Макс Коваленко": {
+      "telegram": "@Maksym_painn"
+    },
+    "Ника Сордиа": {
+      "telegram": "@nikasordia"
+    },
+    "Никита Чигладзе": {
+      "telegram": "Double G"
+    },
+    "Валера гио": {
+      "telegram": "@theheartisdeceitfulaboveaIlthing"
+    },
+    "Валентин Позамантиров": {
+      "telegram": "@ValentinoArgentino"
+    },
+    "Паша Жуковский / Пабло": {
+      "telegram": "@arrisabalaga"
+    },
+    "Владимир": {
+      "telegram": "@Old_Sage777"
+    },
+    "Никита Маслов": {
+      "telegram": "@astron0m"
+    },
+    "Антон Тучинский": {
+      "telegram": "@anton_tuchynski"
+    },
+    "Женя Поляков": {
+      "telegram": "@zh_k500"
+    },
+    "Владимир К.": {
+      "telegram": "@asudsa"
+    }
+  },
+  "careerStats": {
+    "Макс Фол": {
+      "goals": 12,
+      "assists": 8,
+      "mvps": 2,
+      "sessions": 3,
+      "ratingSum": 27.799999999999997,
+      "ratingCount": 3,
+      "team": "orange"
+    },
+    "Олег Костев": {
+      "goals": 2,
+      "assists": 4,
+      "mvps": 0,
+      "sessions": 2,
+      "ratingSum": 15.1,
+      "ratingCount": 2,
+      "team": "black"
+    },
+    "Давид Анисимов": {
+      "goals": 3,
+      "assists": 1,
+      "mvps": 0,
+      "sessions": 3,
+      "ratingSum": 22.9,
+      "ratingCount": 3,
+      "team": "lime"
+    },
+    "Никита Чигладзе": {
+      "goals": 2,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 3,
+      "ratingSum": 18.5,
+      "ratingCount": 3,
+      "team": "orange"
+    },
+    "Паша Жуковский / Пабло": {
+      "goals": 2,
+      "assists": 2,
+      "mvps": 0,
+      "sessions": 2,
+      "ratingSum": 14.3,
+      "ratingCount": 2,
+      "team": "orange"
+    },
+    "Ника Сордиа": {
+      "goals": 2,
+      "assists": 0,
+      "mvps": 1,
+      "sessions": 1,
+      "ratingSum": 8.8,
+      "ratingCount": 1,
+      "team": "black"
+    },
+    "Денис Шподарис": {
+      "goals": 2,
+      "assists": 3,
+      "mvps": 0,
+      "sessions": 3,
+      "ratingSum": 16.9,
+      "ratingCount": 3,
+      "team": "black"
+    },
+    "Олег Русанов": {
+      "goals": 1,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 6.8,
+      "ratingCount": 1,
+      "team": "lime"
+    },
+    "Дата": {
+      "goals": 6,
+      "assists": 5,
+      "mvps": 0,
+      "sessions": 3,
+      "ratingSum": 24.9,
+      "ratingCount": 3,
+      "team": "lime"
+    },
+    "Тимофей Клинцов": {
+      "goals": 3,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 7.2,
+      "ratingCount": 1,
+      "team": "lime"
+    },
+    "Макс Ясинский": {
+      "goals": 1,
+      "assists": 3,
+      "mvps": 1,
+      "sessions": 2,
+      "ratingSum": 16.5,
+      "ratingCount": 2,
+      "team": "orange"
+    },
+    "Валентин Позамантиров": {
+      "goals": 2,
+      "assists": 2,
+      "mvps": 0,
+      "sessions": 2,
+      "ratingSum": 5.2,
+      "ratingCount": 1,
+      "team": "lime"
+    },
+    "Эдгар": {
+      "goals": 1,
+      "assists": 3,
+      "mvps": 0,
+      "sessions": 3,
+      "ratingSum": 23.2,
+      "ratingCount": 3,
+      "team": "orange"
+    },
+    "Олег Борисов": {
+      "goals": 0,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 4,
+      "ratingCount": 1,
+      "team": "lime"
+    },
+    "Валера гио": {
+      "goals": 0,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 8.7,
+      "ratingCount": 1,
+      "team": "orange"
+    },
+    "Сабир Агаев": {
+      "goals": 0,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 2,
+      "ratingSum": 9.899999999999999,
+      "ratingCount": 2,
+      "team": "orange"
+    },
+    "Костя Амзаев": {
+      "goals": 0,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 2,
+      "ratingSum": 15.200000000000001,
+      "ratingCount": 2,
+      "team": "lime"
+    },
+    "Макс Коваленко": {
+      "goals": 0,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 2,
+      "ratingSum": 12,
+      "ratingCount": 2,
+      "team": "orange"
+    },
+    "Женя Поляков": {
+      "goals": 12,
+      "assists": 2,
+      "mvps": 2,
+      "sessions": 2,
+      "ratingSum": 19.4,
+      "ratingCount": 2,
+      "team": "orange"
+    },
+    "Никита Маслов": {
+      "goals": 4,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 8.2,
+      "ratingCount": 1,
+      "team": "orange"
+    },
+    "Влад Валеватый": {
+      "goals": 9,
+      "assists": 2,
+      "mvps": 0,
+      "sessions": 2,
+      "ratingSum": 16.3,
+      "ratingCount": 2,
+      "team": "black"
+    },
+    "Сергей Сидамонидзе ☢️": {
+      "goals": 0,
+      "assists": 1,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 5.1,
+      "ratingCount": 1,
+      "team": "lime"
+    },
+    "Дмитрий Изотов": {
+      "goals": 9,
+      "assists": 1,
+      "mvps": 1,
+      "sessions": 2,
+      "ratingSum": 16.5,
+      "ratingCount": 2,
+      "team": "lime"
+    },
+    "Костя Колмурзаев": {
+      "goals": 0,
+      "assists": 1,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 4.2,
+      "ratingCount": 1,
+      "team": "lime"
+    },
+    "Стас Пидгайный": {
+      "goals": 2,
+      "assists": 1,
+      "mvps": 1,
+      "sessions": 2,
+      "ratingSum": 17.1,
+      "ratingCount": 2,
+      "team": "black"
+    },
+    "Антон Тучинский": {
+      "goals": 0,
+      "assists": 1,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 0,
+      "ratingCount": 0,
+      "team": "orange"
+    },
+    "Павел Иванченко": {
+      "goals": 0,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 2,
+      "ratingSum": 7.8,
+      "ratingCount": 2,
+      "team": "orange"
+    },
+    "Владимир": {
+      "goals": 4,
+      "assists": 1,
+      "mvps": 1,
+      "sessions": 1,
+      "ratingSum": 9,
+      "ratingCount": 1,
+      "team": "lime"
+    },
+    "Сергей": {
+      "goals": 3,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 8.2,
+      "ratingCount": 1,
+      "team": "black"
+    },
+    "Святослав Маирс": {
+      "goals": 2,
+      "assists": 1,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 7,
+      "ratingCount": 1,
+      "team": "lime"
+    },
+    "Владимир К.": {
+      "goals": 1,
+      "assists": 1,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 7.9,
+      "ratingCount": 1,
+      "team": "black"
+    },
+    "Андрей Черных": {
+      "goals": 0,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 6,
+      "ratingCount": 1,
+      "team": "lime"
+    },
+    "Лёха": {
+      "goals": 0,
+      "assists": 0,
+      "mvps": 0,
+      "sessions": 1,
+      "ratingSum": 5.6,
+      "ratingCount": 1,
+      "team": "black"
+    }
+  }
+}
